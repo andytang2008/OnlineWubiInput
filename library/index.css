@@ -1,0 +1,166 @@
+textarea {loadDiv more difficult to calculate the position */
+ font-family: "Times New Roman", "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 24px 32px 16px 8px;    /* different paddings so position computations don't accidentally return a "correct" result */
+  /*text-transform: uppercase;  */    /* this drastically changes character width on proportional fonts */
+  text-indent: 20px;
+ /*  border: 16px lightblue dotted;  needs to be accounted for when returning the final position */
+ /* border-right-width: 24px;       discourage naive border arithmetic */
+  background: #f9f9f9;
+  tab-size: 20;
+  -moz-tab-size: 20;
+/*margin: 200px 200px 0 auto ; */
+}
+
+
+
+.col {
+  margin-right: 0em;
+  width: 720px;
+  height: 150px;
+
+}
+
+.editor_text_area {  /*Chrome windows*/
+ /* display: flex;
+  position: relative;
+ left:50px;
+ padding: 24px 32px 16px 58px; */
+ display: flex;
+ margin: 5px 50px 60px 250px ;  /* top right bottom left   margin: 30px 50px 80px 290px ; */
+   background: white;
+ /* margin: 30px -400px 80px 0px ;*/
+}
+ 
+.editor_text_area_firefox {  /*Firefox windows*/
+ /* display: flex;
+  position: relative;
+ left:50px;
+ padding: 24px 32px 16px 58px; */
+ display: flex;
+    background: lightgrey;
+ /*margin: 30px 50px 80px 290px ; */
+  margin: 5px 300px 60px 250px ; /* top right bottom left   margin: 30px 50px 80px 290px ; */
+}
+
+
+.editor_text_area_safari {  /*Safari windows */
+ /* display: flex;
+  position: relative;
+ left:50px;
+ padding: 24px 32px 16px 58px; */
+ display: flex;
+    background: lightgrey;
+ /*margin: 30px 50px 80px 290px ; */
+  margin: 30px 185px 80px 200px ;
+}
+
+.editor_text_area_android {  /*Android Chrome*/
+ /* display: flex;
+  position: relative;
+ left:50px;
+ padding: 24px 32px 16px 58px; */
+ display: flex;
+  /*  background: lightgrey;*/ /*Andy changed it to avoide android tablet has lightgrey part in right of screeen*/
+	background: white;
+ /*margin: 30px 50px 80px 290px ; */
+ /* margin: 30px 10px 80px 10px ;*//*this setting leads to android phone chrome website problem*/
+  margin: 30px -400px 80px 10px ; 
+}
+
+.editor_text_area_android_firefox { /*Android Firefox*/
+ /* display: flex;
+  position: relative;
+ left:50px;
+ padding: 24px 32px 16px 58px; */
+ display: flex;
+    background: lightgrey;
+ /*margin: 30px 50px 80px 290px ;
+  margin: 30px -400px 80px 0px ; */
+    margin: 30px 10px 80px 10px ;
+}
+
+.virtual_keyboard {
+  position: relative;  
+    top: -55px; 
+  /* We can now move the element
+  //background: orange;
+
+        // 100px from top relative to its old position
+  left: 100px; // 100px from left relative to its old position*/
+}
+
+
+.subject_title{
+
+    position: relative; 
+	font-size: 12px;
+	line-height: 150%;
+	background-color: #f9f9f9;
+	width: 758px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #A7A5B2;
+	border-right-color: #A7A5B2;
+	border-bottom-color: #A7A5B2;
+	border-left-color: #A7A5B2;
+	top:30px;
+	left:290px;
+	
+}
+
+.subject_title_android{
+
+    position: relative; 
+	font-size: 12px;
+	line-height: 150%;
+	background-color: #f9f9f9;
+	width: 758px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #A7A5B2;
+	border-right-color: #A7A5B2;
+	border-bottom-color: #A7A5B2;
+	border-left-color: #A7A5B2;
+	top:30px;
+	left:0px;
+	margin-left:10px;
+}	
+
+.subject_title_safari{
+
+    position: relative; 
+	font-size: 12px;
+	line-height: 150%;
+	background-color: #f9f9f9;
+	width: 758px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #A7A5B2;
+	border-right-color: #A7A5B2;
+	border-bottom-color: #A7A5B2;
+	border-left-color: #A7A5B2;
+	top:30px;
+	left:200px;
+	margin-left:0px;
+}
+	
